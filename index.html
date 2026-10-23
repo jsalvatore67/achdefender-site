@@ -213,6 +213,16 @@ td .none{color:#9AA39C}
   .who{min-height:0}
   .hero-ctas .btn{width:100%}
 }
+/* Demo video */
+.demo{margin-top:96px;text-align:center}
+.demo-head{max-width:720px;margin:0 auto 40px}
+.demo-head h3{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.4vw,52px);line-height:1.05;color:var(--ink);margin:0 0 16px;letter-spacing:-.01em}
+.demo-head h3 em{color:var(--forest)}
+.demo-head p:not(.kicker){margin:0;font-size:18px;color:var(--muted)}
+.demo-frame{max-width:1120px;margin:0 auto;background:var(--ink);border-radius:28px;padding:12px;box-shadow:0 30px 70px rgba(15,36,25,.18)}
+.demo-frame video{display:block;width:100%;height:auto;border-radius:18px;background:var(--ink)}
+.demo-note{margin:16px 0 0;font-size:13px;color:var(--muted)}
+@media (max-width:640px){.demo{margin-top:64px}.demo-frame{padding:6px;border-radius:16px}.demo-frame video{border-radius:11px}}
 </style>
 </head>
 <body>
@@ -343,6 +353,20 @@ td .none{color:#9AA39C}
       <div class="step"><div class="n">1</div><h3>Payroll is queued</h3><p>Your payroll platform prepares the debit as usual. Nothing about your workflow changes.</p></div>
       <div class="step"><div class="n">2</div><h3>ACH Defender checks it</h3><p>The client's balance is verified in real time and the run is compared against their normal behavior.</p></div>
       <div class="step"><div class="n">3</div><h3>Clear, or flag and alert</h3><p>Healthy debits go through. Risky ones are flagged and your team is alerted before the ACH is initiated.</p></div>
+    </div>
+    <div class="demo" id="demo">
+      <div class="demo-head">
+        <p class="kicker">See it in action</p>
+        <h3>From NACHA file to <em>approved</em> in minutes.</h3>
+        <p>Watch a payroll bureau upload a file, see which clients can fund it, and catch shortfalls before a single ACH goes out.</p>
+      </div>
+      <div class="demo-frame">
+        <video controls playsinline preload="metadata" poster="media/achdefender-demo-poster.jpg" aria-label="ACH Defender product demo video">
+          <source src="media/achdefender-demo.mp4" type="video/mp4">
+          Your browser can't play this video. <a href="media/achdefender-demo.mp4">Download the demo</a>.
+        </video>
+      </div>
+      <p class="demo-note">Demo uses sample data. Client names and accounts are fictional.</p>
     </div>
   </div>
 </section>
